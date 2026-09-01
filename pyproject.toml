@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "img2gps"
+version = "0.2.0"
+description = "Grid-based image geolocation model for predicting GPS coordinates from campus images."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "img2GPS Project Team"}
+]
+dependencies = [
+  "torch",
+  "torchvision",
+  "datasets",
+  "huggingface_hub",
+  "pillow",
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+  "tqdm",
+  "pyyaml",
+]
+
+[project.optional-dependencies]
+api = [
+  "fastapi",
+  "uvicorn[standard]",
+  "python-multipart",
+]
+demo = [
+  "streamlit",
+]
+dev = [
+  "pytest",
+]
+all = [
+  "fastapi",
+  "uvicorn[standard]",
+  "python-multipart",
+  "streamlit",
+  "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

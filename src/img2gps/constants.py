@@ -1,0 +1,13 @@
+"""Project-wide constants for the img2GPS model."""
+
+GRID_N = 10
+LAT_MIN = 39.9498
+LAT_MAX = 39.9532
+LON_MIN = -75.1932
+LON_MAX = -75.1898
+
+LAT_STEP = (LAT_MAX - LAT_MIN) / GRID_N
+LON_STEP = (LON_MAX - LON_MIN) / GRID_N
+NUM_CELLS = GRID_N * GRID_N
+
+DATASET_NAME = "yyss114/CIS-5190-project-6"

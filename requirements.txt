@@ -1,0 +1,16 @@
+torch
+torchvision
+datasets
+huggingface_hub
+pillow
+numpy
+pandas
+scikit-learn
+matplotlib
+tqdm
+pyyaml
+fastapi
+uvicorn[standard]
+python-multipart
+streamlit
+pytest

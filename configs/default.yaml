@@ -1,0 +1,26 @@
+data:
+  dataset: yyss114/CIS-5190-project-6
+  split: train
+  val_fraction: 0.10
+  split_strategy: location_group
+  location_round_decimals: 5
+  reference_csv: null
+  reference_image_dir: null
+
+train:
+  epochs: 1
+  batch_size: 32
+  num_workers: 0
+  seed: 42
+  lr_backbone: 0.0001
+  lr_head: 0.0003
+  weight_decay: 0.001
+  offset_loss_weight: 5.0
+  label_smoothing: 0.1
+  top_k: 5
+  pretrained: true
+  freeze_backbone: true
+  warmup_epochs: 0
+  use_amp: false
+  output_dir: checkpoints
+  run_name: img2gps_resnet50_grid

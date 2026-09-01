@@ -1,0 +1,9 @@
+services:
+  img2gps-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      IMG2GPS_CHECKPOINT: /app/checkpoints/best.pt
+    volumes:
+      - ./checkpoints:/app/checkpoints:ro

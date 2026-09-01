@@ -1,0 +1,69 @@
+# reports and documents
+*.pdf
+*.docx
+*.pptx
+
+# checkpoints and model artifacts
+*.pt
+*.pth
+*.ckpt
+checkpoints/*
+!checkpoints/
+!checkpoints/README.md
+
+# data files
+data/
+dataset/
+datasets/
+reference/
+*.parquet
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+
+# images and media
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.webp
+*.mp4
+
+# keep small demo/example images and project figures
+!examples/
+!examples/images/
+!examples/images/*.jpg
+!examples/images/*.jpeg
+!examples/images/*.png
+!assets/
+!assets/*.png
+!assets/*.jpg
+!assets/*.jpeg
+
+# experiment outputs
+outputs/
+runs/
+wandb/
+mlruns/
+*.jsonl
+
+# secrets
+.env
+*.key
+credentials.json
+api_keys.json
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# system
+.DS_Store
+
+# logs
+logs/
+*.log
