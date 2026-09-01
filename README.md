@@ -5,7 +5,7 @@
 
 ## Overview
 
-**img2GPS** reframes image geolocation as a structured spatial prediction problem.
+***Campus Image Geolocation*** reframes image geolocation as a structured spatial prediction problem.
 
 Rather than directly regressing latitude and longitude as two continuous values, the target campus region is divided into a **10 × 10 spatial grid**. A deep learning model predicts a probability distribution across grid cells, and the final GPS coordinate is obtained through **soft top-k decoding**.
 
