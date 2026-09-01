@@ -1,4 +1,5 @@
-# img2GPS: Campus-Scale Image Geolocation
+## Campus-Image-Geolocation-using-Deep-Learning
+
 
 > A computer vision and deep learning project that predicts approximate GPS coordinates from campus images using structured spatial classification and uncertainty-aware top-k decoding.
 
